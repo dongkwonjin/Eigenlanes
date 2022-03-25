@@ -1,0 +1,107 @@
+import os
+import torch
+
+import numpy as np
+
+class Config(object):
+    def __init__(self):
+        # --------basics-------- #
+        self.setting_for_system()
+        self.setting_for_path()
+        self.setting_for_image_param()
+        self.setting_for_dataloader()
+        self.setting_for_visualization()
+        self.setting_for_save()
+        # --------preprocessing-------- #
+        self.setting_for_lane_representation()
+        self.setting_for_svd()
+        self.setting_for_clustering()
+
+    def setting_for_system(self):
+        self.gpu_id = "0"
+        self.seed = 123
+        os.environ["CUDA_VISIBLE_DEVICES"] = self.gpu_id
+        torch.backends.cudnn.deterministic = True
+
+    def setting_for_path(self):
+        self.pc = 'main'
+        self.dir = dict()
+        self.setting_for_dataset_path()  # dataset path
+
+        self.dir['proj'] = os.path.dirname(os.getcwd()) + '/'
+        self.dir['head_proj'] = '/'.join(self.dir['proj'].split('/')[:-2]) + '/'
+        self.dir['pre0'] = self.dir['head_proj'] + 'P00_data_processing/output_{}/pickle/'.format(self.datalist)
+        self.dir['pre1'] = self.dir['head_proj'] + 'P01_lane_representation/output_{}/pickle/'.format(self.datalist)
+        self.dir['pre2'] = self.dir['head_proj'] + 'P02_SVD/output_{}/pickle/'.format(self.datalist)
+        self.dir['out'] = os.getcwd().replace('code', 'output') + '_{}/'.format(self.datalist)
+
+    def setting_for_dataset_path(self):
+        self.dataset_name = 'culane'
+        self.datalist = 'train_gt'  # ['train_gt'] only
+
+        # ------------------- need to modify -------------------
+        self.dir['dataset'] = '--dataset_dir'
+        # ------------------------------------------------------
+
+    def setting_for_image_param(self):
+        self.org_height = 590
+        self.org_width = 1640
+        self.height = 320
+        self.width = 800
+        self.size = [self.width, self.height, self.width, self.height]
+        self.mean = [0.485, 0.456, 0.406]
+        self.std = [0.229, 0.224, 0.225]
+        self.crop_size = 240
+
+    def setting_for_dataloader(self):
+        self.num_workers = 4
+        self.batch_size = 1
+        self.data_flip = True
+
+    def setting_for_visualization(self):
+        self.display = True
+        self.display_all = True
+        self.display_mask = True
+
+    def setting_for_save(self):
+        self.save_pickle = True
+
+    def setting_for_lane_representation(self):
+        self.min_y_coord = 0
+        self.max_y_coord = 285
+        self.node_num = self.max_y_coord
+        self.py_coord = self.height - np.float32(np.round(np.linspace(self.max_y_coord, self.min_y_coord + 1, self.node_num)))
+
+    def setting_for_svd(self):
+        self.top_m = 4
+        self.sampling_interval = 3
+        self.thresd_iou = 0.7
+
+        # sampling lane component
+        self.node_num = 50
+        self.sample_idx = np.int32(np.linspace(0, self.max_y_coord - 1, self.node_num))
+        self.node_sampling = True
+        if self.node_sampling == True:
+            self.py_coord = self.py_coord[self.sample_idx]
+
+    def setting_for_clustering(self):
+        self.top_m_for_clustering = 2
+        self.cluster_mode = 'kmeans'  # ['kmeans']
+
+        self.n_clusters = dict()
+
+        self.n_clusters['all'] = 500
+        self.n_clusters['all_iter'] = 250  # do clustering iteratively
+
+        self.n_clusters['straight'] = 500
+        self.n_clusters['straight_iter'] = 250  # do clustering iteratively
+
+        self.thresd_theta = 1
+        self.thresd_iou = dict()
+        self.thresd_iou['all'] = 0.5
+        self.thresd_iou['straight'] = 0.55
+        self.thresd_iou['curve'] = 0.7
+
+        self.thresd_n_sample = 200000
+
+        self.scale_factor = [4, 8, 16]
