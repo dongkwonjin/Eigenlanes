@@ -30,7 +30,6 @@ def args_to_config(cfg, args):
 
     cfg.run_mode = args.run_mode
     if args.run_mode == 'test_paper':
-        cfg.do_eval_culane_official = True
         cfg.sampling_step1 = 1
 
     return cfg
