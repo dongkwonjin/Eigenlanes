@@ -29,7 +29,5 @@ def args_to_config(cfg, args):
     cfg.gpu_id = args.gpus
 
     cfg.run_mode = args.run_mode
-    if args.run_mode == 'test_paper':
-        cfg.sampling_step1 = 1
 
     return cfg
