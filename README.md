@@ -9,6 +9,9 @@
 Official implementation for **"Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes"** 
 [[paper]](https://arxiv.org/abs/2203.15302) [[video]](https://youtu.be/XhEj3o3iihQ).
 
+### Related works
+In CVPR 2022, eigencontours are also proposed to describe object boundaries [[paper]](https://arxiv.org/abs/2203.15259).
+
 ### Requirements
 - PyTorch >= 1.6
 - CUDA >= 10.0
