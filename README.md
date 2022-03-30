@@ -11,6 +11,7 @@ Official implementation for **"Eigenlanes: Data-Driven Lane Descriptors for Stru
 
 ### Related work
 Eigencontours are proposed to describe object boundaries, accepted to CVPR 2022 (oral) [[paper]](https://arxiv.org/abs/2203.15259).
+Congrat my eigenbrother!
 
 ### Requirements
 - PyTorch >= 1.6
