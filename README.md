@@ -1,5 +1,3 @@
-# Roadlane-Eigenlanes
-
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
 
 # [CVPR 2022] Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes
