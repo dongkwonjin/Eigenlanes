@@ -3,7 +3,7 @@
 # [CVPR 2022] Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes
 ### Dongkwon Jin, Wonhui Park, Seong-Gyun Jeong, Heeyeon Kwon, and Chang-Su Kim
 
-<img src="https://github.com/dongkwonjin/Eigenlanes/blob/main/Overview.png" alt="overview" width="430" height="240" border="10" />
+<img src="https://github.com/dongkwonjin/Eigenlanes/blob/main/Overview.png" alt="overview" width="50%" height="50%" border="10" />
 
 ![Overview](Overview.png)
 
