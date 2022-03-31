@@ -14,6 +14,9 @@ We wil also present another paper, **"Eigencontours: Novel Contour Descriptors B
 
 Congratulations to my eigenbrother!
 
+### Video
+<a href="https://www.youtube.com/watch?v=XhEj3o3iihQ" target="_blank"><img src="https://img.youtube.com/vi/XhEj3o3iihQ/0.jpg" alt="Video" width="430" height="240" border="10" /></a>
+
 ### Requirements
 - PyTorch >= 1.6
 - CUDA >= 10.0
