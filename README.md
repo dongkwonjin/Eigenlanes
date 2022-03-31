@@ -5,8 +5,6 @@
 
 <img src="https://github.com/dongkwonjin/Eigenlanes/blob/main/Overview.png" alt="overview" width="50%" height="50%" border="10" />
 
-![Overview](Overview.png)
-
 Official implementation for **"Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes"** 
 [[paper]](https://arxiv.org/abs/2203.15302) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ).
 
