@@ -7,7 +7,7 @@
 -->
 
 Official implementation for **"Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes"** 
-[[paper]](https://arxiv.org/abs/2203.15302) [[video]](https://youtu.be/XhEj3o3iihQ).
+[[paper]](https://arxiv.org/abs/2203.15302) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ).
 
 ### Related work
 We wil also present another paper, **"Eigencontours: Novel Contour Descriptors Based on Low-Rank Approximation"**, accepted to CVPR 2022 (oral) [[paper]](https://arxiv.org/abs/2203.15259).
