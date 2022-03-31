@@ -3,13 +3,13 @@
 # [CVPR 2022] Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes
 ### Dongkwon Jin, Wonhui Park, Seong-Gyun Jeong, Heeyeon Kwon, and Chang-Su Kim
 
-<img src="https://github.com/dongkwonjin/Eigenlanes/blob/main/Overview.png" alt="overview" width="70%" height="70%" border="10" />
+<img src="https://github.com/dongkwonjin/Eigenlanes/blob/main/Overview.png" alt="overview" width="60%" height="60%" border="10" />
 
 Official implementation for **"Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes"** 
 [[paper]](https://arxiv.org/abs/2203.15302) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ).
 
 ### Video
-<a href="https://www.youtube.com/watch?v=XhEj3o3iihQ" target="_blank"><img src="https://img.youtube.com/vi/XhEj3o3iihQ/0.jpg" alt="Video" width="30%" height="30%" border="10"/></a>
+<a href="https://www.youtube.com/watch?v=XhEj3o3iihQ" target="_blank"><img src="https://img.youtube.com/vi/XhEj3o3iihQ/0.jpg" alt="Video" width="25%" height="25%" border="10"/></a>
 
 ### Related work
 We wil also present another paper, **"Eigencontours: Novel Contour Descriptors Based on Low-Rank Approximation"**, accepted to CVPR 2022 (oral) [[paper]](https://arxiv.org/abs/2203.15259).
