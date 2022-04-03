@@ -85,7 +85,7 @@ class Config(object):
 
     def setting_for_visualization(self):
         self.disp_step = 50
-        self.disp_test_result = False
+        self.disp_test_result = True
 
     def setting_for_save(self):
         self.save_pickle = True
