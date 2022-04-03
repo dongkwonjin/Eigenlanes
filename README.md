@@ -95,16 +95,15 @@ $ python main.py --run_mode train --pre_dir ROOT/preprocessed/DATASET_NAME/ --da
 ### Test
 1. Set the dataset you want to test (`DATASET_NAME`)
 2. Parse your dataset path into the `-dataset_dir` argument.
-3. (optional) If you set the `--view` as False, you can obtain the results more quickly.
-4. If you want to get the performances of our work,
+3. If you want to get the performances of our work,
 ```
 $ cd ROOT/Modeling/DATASET_NAME/code/
-$ python main.py --run_mode test_paper --pre_dir ROOT/preprocessed/DATASET_NAME/ --paper_weight_dir ROOT/pretrained/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path --view True
+$ python main.py --run_mode test_paper --pre_dir ROOT/preprocessed/DATASET_NAME/ --paper_weight_dir ROOT/pretrained/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path
 ```
-5. If you want to evaluate a model you trained,
+4. If you want to evaluate a model you trained,
 ```
 $ cd ROOT/Modeling/DATASET_NAME/code/
-$ python main.py --run_mode test --pre_dir ROOT/preprocessed/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path --view True
+$ python main.py --run_mode test --pre_dir ROOT/preprocessed/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path
 ```
 
 ### Preprocessing
@@ -118,7 +117,7 @@ Data preprocessing is divided into five steps, which are P00, P01, P02, P03, and
 If you want to get the preproessed data, please run the preprocessing codes in order. Also, you can download the preprocessed data.
 ```
 $ cd ROOT/Preprocessing/DATASET_NAME/PXX_each_preprocessing_step/code/
-$ python main.py --dataset_dir /where/is/your/dataset/path --view True
+$ python main.py --dataset_dir /where/is/your/dataset/path
 ```
 
 ### Reference
