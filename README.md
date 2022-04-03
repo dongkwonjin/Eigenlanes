@@ -34,7 +34,7 @@ $ git clone https://github.com/dongkwonjin/Roadlane-Eigenlanes.git
 ```
 $ cd ROOT
 $ unzip pretrained.zip
-$ unzip preprocessing.zip
+$ unzip preprocessed.zip
 ```
 4. Create conda environment:
 ```
