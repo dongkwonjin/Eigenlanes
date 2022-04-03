@@ -8,7 +8,6 @@ def parse_args(cfg):
     parser.add_argument('--paper_weight_dir', default='--root/pretrained/DATASET_NAME/', help='pretrained weights dir (paper)')
     parser.add_argument('--backbone', type=str, default='50', help='resnet18 or resnet50')
     parser.add_argument('--view', default=True, help='whether to view')
-    parser.add_argument('--gpus', nargs='+', type=int, default='0')
     args = parser.parse_args()
 
     cfg = args_to_config(cfg, args)
@@ -27,7 +26,6 @@ def args_to_config(cfg, args):
     cfg.dir['weight_paper'] = args.paper_weight_dir
     cfg.backbone = args.backbone
     cfg.disp_test_result = args.view
-    cfg.gpu_id = args.gpus
 
     cfg.run_mode = args.run_mode
     if args.run_mode == 'test_paper':
