@@ -6,7 +6,6 @@ def parse_args(cfg):
     parser.add_argument('--pre_dir', type=str, default='--root/preprocessed/DATASET_NAME/', help='preprocessed data dir')
     parser.add_argument('--dataset_dir', default=None, help='dataset dir')
     parser.add_argument('--paper_weight_dir', default='--root/pretrained/DATASET_NAME/', help='pretrained weights dir (paper)')
-    parser.add_argument('--view', default=False, help='whether to view')
     args = parser.parse_args()
 
     cfg = args_to_config(cfg, args)
@@ -24,8 +23,7 @@ def args_to_config(cfg, args):
         cfg.dir['pre3'] = cfg.dir['pre3'].replace('--preprocessed data path', args.pre_dir)
         cfg.dir['pre4'] = cfg.dir['pre4'].replace('--preprocessed data path', args.pre_dir)
     cfg.dir['weight_paper'] = args.paper_weight_dir
-    cfg.disp_test_result = args.view
-
+    
     cfg.run_mode = args.run_mode
 
     return cfg
