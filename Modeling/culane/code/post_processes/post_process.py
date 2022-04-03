@@ -65,12 +65,6 @@ class Post_Processing(object):
                 k *= 2
             check[m] = 1
 
-        idx = (check == 0).nonzero()
-        if idx.shape[0] == 0:
-            print('Successfully encoded')
-        else:
-            print("error code : {}".format(idx))
-
     def encode_edge_idx(self):
         edge_idx = torch.zeros((self.num_node, self.num_node), dtype=torch.int64).cuda()
         k = 0
