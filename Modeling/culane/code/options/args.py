@@ -3,11 +3,10 @@ import argparse
 def parse_args(cfg):
     parser = argparse.ArgumentParser(description='Hello')
     parser.add_argument('--run_mode', type=str, default='test_paper', help='run mode (train, test, test_paper)')
-    parser.add_argument('--pre_dir', type=str, default='--root/preprocessed/DATASET_NAME/', help='preprocessed data dir')
-    parser.add_argument('--dataset_dir', default=None, help='dataset dir')
-    parser.add_argument('--paper_weight_dir', default='--root/pretrained/DATASET_NAME/', help='pretrained weights dir (paper)')
+    parser.add_argument('--pre_dir', type=str, default='/media/dkjin/4fefb28c-5de9-4abd-a935-aa2d61392048/Work/CVPR2022/Roadlane/Project_github/test/Eigenlanes-main/preprocessed/culane/', help='preprocessed data dir')
+    parser.add_argument('--dataset_dir', default='/media/dkjin/4fefb28c-5de9-4abd-a935-aa2d61392048/Dataset/CULane/', help='dataset dir')
+    parser.add_argument('--paper_weight_dir', default='/media/dkjin/4fefb28c-5de9-4abd-a935-aa2d61392048/Work/CVPR2022/Roadlane/Project_github/test/Eigenlanes-main/pretrained/culane/', help='pretrained weights dir (paper)')
     parser.add_argument('--backbone', type=str, default='50', help='resnet18 or resnet50')
-    parser.add_argument('--view', default=True, help='whether to view')
     args = parser.parse_args()
 
     cfg = args_to_config(cfg, args)
@@ -25,7 +24,6 @@ def args_to_config(cfg, args):
         cfg.dir['pre4'] = cfg.dir['pre4'].replace('--preprocessed data path', args.pre_dir)
     cfg.dir['weight_paper'] = args.paper_weight_dir
     cfg.backbone = args.backbone
-    cfg.disp_test_result = args.view
 
     cfg.run_mode = args.run_mode
     if args.run_mode == 'test_paper':
