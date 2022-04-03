@@ -8,6 +8,8 @@
 Official implementation for **"Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes"** 
 [[paper]](https://arxiv.org/abs/2203.15302) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ).
 
+We construct a new dataset called **"SDLane"**. SDLane is available at [here](https://www.42dot.ai/akit/dataset)
+
 ### Video
 <a href="https://www.youtube.com/watch?v=XhEj3o3iihQ" target="_blank"><img src="https://img.youtube.com/vi/XhEj3o3iihQ/0.jpg" alt="Video" width="30%" height="30%" border="10"/></a>
 
