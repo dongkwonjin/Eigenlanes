@@ -89,7 +89,7 @@ $ make
 3. Edit `config.py` if you want to control the training process in detail
 ```
 $ cd ROOT/Modeling/DATASET_NAME/code/
-$ python main.py --run_mode train --pre_dir ROOT/preprocessed/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path --backbone 18 
+$ python main.py --run_mode train --pre_dir ROOT/preprocessed/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path 
 ```
 
 ### Test
