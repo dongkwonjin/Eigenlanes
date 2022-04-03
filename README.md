@@ -89,7 +89,7 @@ $ make
 3. Edit `config.py` if you want to control the training process in detail
 ```
 $ cd ROOT/Modeling/DATASET_NAME/code/
-$ python main.py --run_mode train --pre_dir ROOT/preprocessed/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path 
+$ python main.py --run_mode train --pre_dir ROOT/preprocessed/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path/ 
 ```
 
 ### Test
@@ -98,12 +98,12 @@ $ python main.py --run_mode train --pre_dir ROOT/preprocessed/DATASET_NAME/ --da
 3. If you want to get the performances of our work,
 ```
 $ cd ROOT/Modeling/DATASET_NAME/code/
-$ python main.py --run_mode test_paper --pre_dir ROOT/preprocessed/DATASET_NAME/ --paper_weight_dir ROOT/pretrained/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path
+$ python main.py --run_mode test_paper --pre_dir ROOT/preprocessed/DATASET_NAME/ --paper_weight_dir ROOT/pretrained/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path/
 ```
 4. If you want to evaluate a model you trained,
 ```
 $ cd ROOT/Modeling/DATASET_NAME/code/
-$ python main.py --run_mode test --pre_dir ROOT/preprocessed/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path
+$ python main.py --run_mode test --pre_dir ROOT/preprocessed/DATASET_NAME/ --dataset_dir /where/is/your/dataset/path/
 ```
 
 ### Preprocessing
@@ -117,7 +117,7 @@ Data preprocessing is divided into five steps, which are P00, P01, P02, P03, and
 If you want to get the preproessed data, please run the preprocessing codes in order. Also, you can download the preprocessed data.
 ```
 $ cd ROOT/Preprocessing/DATASET_NAME/PXX_each_preprocessing_step/code/
-$ python main.py --dataset_dir /where/is/your/dataset/path
+$ python main.py --dataset_dir /where/is/your/dataset/path/
 ```
 
 ### Reference
