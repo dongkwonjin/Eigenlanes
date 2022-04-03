@@ -6,7 +6,7 @@
 <img src="https://github.com/dongkwonjin/Eigenlanes/blob/main/Overview.png" alt="overview" width="90%" height="90%" border="10" />
 
 Official implementation for **"Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes"** 
-[[paper]](https://arxiv.org/abs/2203.15302) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ).
+[[paper]](https://arxiv.org/abs/2203.15302) [[supp]](https://drive.google.com/file/d/1nRqSsf2bBDAA_s5XZ_BuKPyuHEr3OHJt/view?usp=sharing) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ).
 
 We construct a new dataset called **"SDLane"**. SDLane is available at [here](https://www.42dot.ai/akit/dataset). But, only test set can be provided due to privacy issues. All dataset will be provided soon.
 
