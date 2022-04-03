@@ -6,7 +6,6 @@ def parse_args(cfg):
     parser.add_argument('--pre_dir', type=str, default='/media/dkjin/4fefb28c-5de9-4abd-a935-aa2d61392048/Work/CVPR2022/Roadlane/Project_github/test/Eigenlanes-main/preprocessed/culane/', help='preprocessed data dir')
     parser.add_argument('--dataset_dir', default='/media/dkjin/4fefb28c-5de9-4abd-a935-aa2d61392048/Dataset/CULane/', help='dataset dir')
     parser.add_argument('--paper_weight_dir', default='/media/dkjin/4fefb28c-5de9-4abd-a935-aa2d61392048/Work/CVPR2022/Roadlane/Project_github/test/Eigenlanes-main/pretrained/culane/', help='pretrained weights dir (paper)')
-    parser.add_argument('--backbone', type=str, default='50', help='resnet18 or resnet50')
     args = parser.parse_args()
 
     cfg = args_to_config(cfg, args)
@@ -23,8 +22,7 @@ def args_to_config(cfg, args):
         cfg.dir['pre3'] = cfg.dir['pre3'].replace('--preprocessed data path', args.pre_dir)
         cfg.dir['pre4'] = cfg.dir['pre4'].replace('--preprocessed data path', args.pre_dir)
     cfg.dir['weight_paper'] = args.paper_weight_dir
-    cfg.backbone = args.backbone
-
+    
     cfg.run_mode = args.run_mode
     if args.run_mode == 'test_paper':
         cfg.do_eval_culane_official = True
