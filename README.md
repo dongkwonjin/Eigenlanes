@@ -14,7 +14,7 @@ We construct a new dataset called **"SDLane"**. SDLane is available at [here](ht
 <a href="https://www.youtube.com/watch?v=XhEj3o3iihQ" target="_blank"><img src="https://img.youtube.com/vi/XhEj3o3iihQ/0.jpg" alt="Video" width="30%" height="30%" /></a>
 
 ### Related work
-We wil also present another paper, **"Eigencontours: Novel Contour Descriptors Based on Low-Rank Approximation"**, accepted to CVPR 2022 (oral) [[paper]](https://arxiv.org/abs/2203.15259).
+We wil also present another paper, **"Eigencontours: Novel Contour Descriptors Based on Low-Rank Approximation"**, accepted to CVPR 2022 (oral) [[github]](https://github.com/dnjs3594/Eigencontours).
 Congratulations to my eigenbrother!
 
 
