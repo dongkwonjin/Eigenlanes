@@ -27,7 +27,7 @@ Congratulations to my eigenbrother!
 ### Installation
 1. Download repository. We call this directory as `ROOT`:
 ```
-$ git clone https://github.com/dongkwonjin/Roadlane-Eigenlanes.git
+$ git clone https://github.com/dongkwonjin/Eigenlanes.git
 ```
 
 2. Download [pre-trained model](https://drive.google.com/file/d/1rXck6jMQzsqIn_r3oOjLrPlUyYp8bXjN/view?usp=sharing) parameters and [preprocessed data](https://drive.google.com/file/d/1a7VtFmuLWBx1TaW7zkQg78wOjAxeWmJ9/view?usp=sharing) in `ROOT`:
