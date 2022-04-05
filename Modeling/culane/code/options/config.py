@@ -73,7 +73,7 @@ class Config(object):
 
         self.category = 'test_all'  # ['test_all']
         self.sampling_step1 = 34
-        self.sampling_step2 = 1
+        self.sampling_step2 = 5
 
         self.batch_size = {'img': 4}
 
