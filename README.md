@@ -109,7 +109,7 @@ $ python main.py --run_mode test --pre_dir ROOT/preprocessed/DATASET_NAME/ --dat
 
 ### Preprocessing
 
-<img src="https://github.com/dongkwonjin/Eigenlanes/blob/main/Example.png" alt="example" width="90%" height="90%" border="10"/>
+<img src="https://github.com/dongkwonjin/Eigenlanes/blob/main/Example.png" alt="example" width="70%" height="70%" border="10"/>
 
 Data preprocessing is divided into five steps, which are P00, P01, P02, P03, and P04. Below we describe each step in detail.
 1. In P00, the type of ground-truth lanes in a dataset is converted to pickle format.
