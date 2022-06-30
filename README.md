@@ -6,7 +6,7 @@
 <img src="https://github.com/dongkwonjin/Eigenlanes/blob/main/Overview.png" alt="overview" width="90%" height="90%" border="10"/>
 
 Official implementation for **"Eigenlanes: Data-Driven Lane Descriptors for Structurally Diverse Lanes"** 
-[[paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Jin_Eigenlanes_Data-Driven_Lane_Descriptors_for_Structurally_Diverse_Lanes_CVPR_2022_paper.pdf) [[supp]](https://drive.google.com/file/d/1nRqSsf2bBDAA_s5XZ_BuKPyuHEr3OHJt/view?usp=sharing) [[arxiv]](https://arxiv.org/abs/2203.15302) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ).
+[[paper]](https://openaccess.thecvf.com/content/CVPR2022/html/Jin_Eigenlanes_Data-Driven_Lane_Descriptors_for_Structurally_Diverse_Lanes_CVPR_2022_paper.html) [[arxiv]](https://arxiv.org/abs/2203.15302) [[video]](https://www.youtube.com/watch?v=XhEj3o3iihQ).
 
 A new dataset called **"SDLane"** is available at [here](https://www.42dot.ai/akit/dataset).
 
